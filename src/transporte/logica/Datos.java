@@ -1,7 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/*Copyright (C) 2017 Cristian Rodriguez & David Franco & Daniel Ojeda
+ * Universidad Distrital Francisco Jose de Caldas.2017.
+ * Programacion Orientada a Objetos - Gr 020 - 85
+ * Prohibida la reproduccion total o parcial de este codigo.
  */
 package transporte.logica;
 
@@ -10,17 +10,19 @@ import java.util.Scanner;
 /**
  *
  * @author crist
+ * version 1.0
  */
 public class Datos {
 
-    private int x1;
+    private int x1;//variables generales
     private int y1;
     private int x2;
     private int y2;
     private int cuadras;
     private int calle;
     private int carrera;
-    public int getX1() {
+
+    public int getX1() {//metodos setters y getters
         return x1;
     }
 
@@ -52,22 +54,21 @@ public class Datos {
         this.y2 = y2;
     }
 
-    public void mostrarCuadras() {
-    
-        int neg=-1;
-        calle = x1-x2;
-        if(calle<0){
-            calle=calle*neg;
+    public void mostrarCuadras() {//mostrar distancia entre cuadras
+
+        int neg = -1;//variable convertir a positivo
+        calle = x1 - x2;//calcular distancia entre calles
+        if (calle < 0) {
+            calle = calle * neg;//pasar valores a positivos
         }
-        carrera = y1-y2;
-        if(carrera<0){
-            carrera=carrera*neg;    
+        carrera = y1 - y2;//calcular distancia entre carreras
+        if (carrera < 0) {
+            carrera = carrera * neg;//pasar valores a positivos
         }
-        cuadras=calle+carrera;
-        System.out.println("La distancia total a recorrer es  " + cuadras + " Cuadras");
-        System.out.println("");
-        System.out.println("");
+        cuadras = calle + carrera;//calcular cuadras totales
+        System.out.println("La distancia total a recorrer es  " + cuadras + " Cuadras");//imprimir mensaje al usuario
+        System.out.println("");//imprimir mensaje al usuario
+        System.out.println("");//imprimir mensaje al usuario
     }
 
 }
-

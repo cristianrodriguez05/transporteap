@@ -1,22 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/*Copyright (C) 2017 Cristian Rodriguez & David Franco & Daniel Ojeda
+ * Universidad Distrital Francisco Jose de Caldas.2017.
+ * Programacion Orientada a Objetos - Gr 020 - 85
+ * Prohibida la reproduccion total o parcial de este codigo.
  */
 package transporte.logica;
 
 /**
  *
  * @author crist
+ * version 1.0
  */
 public abstract class Transportes {
-    public int x1;
+
+    public int x1;//variables super clase
     public int x2;
     public int y1;
     public int y2;
 
-
-    public int getX1() {
+    public int getX1() {//metodos setters & getters
         return x1;
     }
 
@@ -47,7 +48,7 @@ public abstract class Transportes {
     public void setY2(int y2) {
         this.y2 = y2;
     }
-    
-     public abstract void rutaCalculada();
-     
+
+    public abstract void rutaCalculada();//metodo calcular ruta super clase
+
 }
